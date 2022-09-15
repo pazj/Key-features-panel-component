@@ -1,0 +1,27 @@
+{
+  "section_title": "Optional component title can go in here",
+  "heading_level": "h1",
+  "items": [
+    {
+      "image": "<img src='/sites/default/files/2022-09/Purina_cat_holding-02%203.png' alt='test image' />",
+      "caption": "Created by an in-house team of Purina breed experts"
+    },
+    {
+      "image": "<img src='/sites/default/files/2022-09/Purina_Cat_kitten-02.png' alt='test image' />",
+      "caption": "We’ll match their needs with your lifestyle"
+    },
+    {
+      "image": "<img src='/sites/default/files/inline-images/Purina_Cat_Laptop_woman-02.png' />",
+      "caption": "Owen 50 breeds to chose from"
+    }
+  ],
+  
+  "image": "<img src='/sites/default/files/2022-09/Purina_cat_holding-02%203.png' alt='test image' />",
+  "caption": "Created by an in-house team of Purina breed expertssssss",
+  "button_text": "Start the quiz",
+  "button_url": "Start the quiz",
+  "subtitle": "Already know which breed you want?",
+  "url": "#",
+  "link_text":"Find it in the Dog Breed Library",
+  "link_url": "#"
+}

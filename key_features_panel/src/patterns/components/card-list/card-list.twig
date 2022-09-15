@@ -1,0 +1,98 @@
+{{ attach_library('key_features_panel/card-list') }}
+
+<div class="card-list {{ modifier }}" {{ extra_attributes }}>
+  {#
+    Optional: Pass in Drupal specific functionality.
+    Note that this is mostly relevant to nodes and blocks.
+  #}
+ 
+    {{ title_prefix }}
+    {{ title_suffix }}
+  
+
+  {% if section_title %}
+    {%
+      include '@key_features_panel/heading/heading.twig' with {
+        "title": section_title,
+        "heading_level": heading_level,
+        "modifier": "card-list__title"
+      } only
+    %}
+  {% endif %}
+
+  <ul class="card-list__items">
+    {% block card_items %}
+      {#
+        This for loop is only used to display the card list
+        in Pattern Lab. Drupal will override this twig block.
+        See paragraph--card-list.html.twig for more info.
+      #}
+      {% for item in items %}
+        <li class="card-list__item">
+          {%
+            include '@key_features_panel/card/card.twig' with {
+              "image": item.image,
+              "caption": item.caption,
+            } only
+          %}
+        </li>
+      {% endfor %}
+    {% endblock %}
+
+  </ul>
+<div class="card-wrapper">
+  <div class="card-images">
+        {% if image %}
+        {{ image }}
+        {% endif %}
+        </div>
+        <div class="card-captions">
+          <p>{% if caption %}
+            {{ caption }}
+            {% endif %}</p>
+  </div>
+</div>
+  {# <div class="card-list__button">
+    {% if button_text %}
+    {%
+      include '@key_features_panel/button/button.twig' with {
+        "text": button_text,
+        "url": url
+      } only
+    %}
+    {% endif %}
+  </div> #}
+
+  <div class="card-list__button">
+    {% if button_url %}
+    {%
+      include '@key_features_panel/button/button.twig' with {
+        "text": button_url,
+      } only
+    %}
+    {% endif %}
+  </div>
+
+  <div class="dotted-line__wrapper">
+      <div class="dotted-line"></div>
+  </div>
+
+  {% if subtitle %}
+    <div class="card-list__subtitle">
+     {{ subtitle }} 
+    </div>
+  {% endif %}
+
+  {% if link_text %}
+  <div class="card-list__linktext">
+      <a href="{{ url }}" class="card-list__link">{{ link_text }}</a>
+    </div>
+
+{% endif %}
+
+{%if link_url %}
+<div class="card-list__linktext">
+{{ link_url }}
+</div>
+{% endif %}
+</div>
