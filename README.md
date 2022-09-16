@@ -1,3 +1,8 @@
 # Key-features-panel-component
 Drupal 9
-![My Image](key-features-panel/key-feature-panel-desktop.png)
+
+# Desktop version UI
+![Alt text](https://github.com/pazj/Key-features-panel-component/blob/main/key_features_panel/key-feature-panel-desktop.png?raw=true)
+
+# Mobile version UI
+![Alt text](https://github.com/pazj/Key-features-panel-component/blob/main/key_features_panel/key-feature-panel-mobile.png?raw=true)
