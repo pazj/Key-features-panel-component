@@ -17,7 +17,11 @@
   ],
   
   "image": "<img src='/sites/default/files/2022-09/Purina_cat_holding-02%203.png' alt='test image' />",
-  "caption": "Created by an in-house team of Purina breed expertssssss",
+  "image1": "<img src='/sites/default/files/2022-09/Purina_cat_holding-02%203.png' alt='test image' />",
+  "image2": "<img src='/sites/default/files/2022-09/Purina_cat_holding-02%203.png' alt='test image' />",
+  "caption1": "Created by an in-house team of Purina breed expertssssss",
+  "caption2": "Created by an in-house team of Purina breed expertssssss",
+  "caption3": "Created by an in-house team of Purina breed expertssssss",
   "button_text": "Start the quiz",
   "button_url": "Start the quiz",
   "subtitle": "Already know which breed you want?",

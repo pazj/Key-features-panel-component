@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a feature card list content type node in the teaser view mode.
+ * Theme override to display a key feature card list content type node in the teaser view mode.
  *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
@@ -65,9 +65,6 @@
  *
  * @see template_preprocess_node()
  *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 
@@ -75,17 +72,20 @@
 
 {% embed "@key_features_panel/card-list/card-list.twig" with {
        "image": content.field_feature_card_image|render|trim is not empty ? content.field_feature_card_image,
+       "image1": content.field_feature_card_image_1,
+       "image2": content.field_feature_card_image_2,
        "caption": content.field_feature_card_text,
+       "caption1": content.field_feature_card_text_1,
+       "caption2": content.field_feature_card_text_2,
        "button_text": content.field_feature_card_button,
        "button_url": content.field_add_cta,
-        "subtitle": content.field_key_feature_subtitle,
-        "section_title": content.field_optional_title|render,
-        "link_url": content.field_add_url,
+       "subtitle": content.field_key_feature_subtitle,
+       "section_title": content.field_optional_title|render,
+       "link_url": content.field_add_url,
     } 
   %} 
   {% endembed %}
 
-  
 
   
 
