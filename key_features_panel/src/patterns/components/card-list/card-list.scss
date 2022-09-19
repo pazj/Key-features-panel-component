@@ -23,24 +23,26 @@
 // }
 
 .card-captions{
-  // display: flex;
-  // justify-content: space-around;
   color: #3a3533;
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   text-align: center;
+  padding-right: 45px;
 }
 
 .card-wrapper{
   display: flex;
   justify-content: space-around;
- 
+  align-items: center;
+  padding-right: 115px;
+  
   @include breakpoint($bp-sm) {
     display: flex;
     flex-direction: column;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-right: -26px;
+    padding: 0;
   }
+
 }
 
 .card-list__title {
